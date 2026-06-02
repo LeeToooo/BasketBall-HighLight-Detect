@@ -1,0 +1,30 @@
+# Configuration file for the model and dataset
+
+# Dataset paths
+dataset_paths:
+- "data/crops"
+
+# Learning parameters
+learning_rate: 0.00001
+n_epochs: 2
+log_interval: 10
+
+# Dataset split percentages
+split_ratios: [0.8, 0.2]
+
+# Batch size for training
+batch_size: 16
+
+# Early stopping configuration
+early_stopper:
+  patience: 3
+  min_delta: 0
+
+# Model configuration
+model:
+  type: "resnet"  # Can be "resnet" or "baseline"
+  resnet_version: 18  # Used only if resnet is selected
+  pretrained: True  # For loading pretrained weights (for ResNet)
+
+# Resume training from the latest checkpoint
+resume_training: False

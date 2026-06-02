@@ -1,0 +1,9 @@
+opencv-python
+torch
+torchvision
+ultralytics
+scipy
+tqdm
+pyyaml
+streamlit
+moviepy
